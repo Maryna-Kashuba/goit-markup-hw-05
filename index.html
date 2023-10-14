@@ -347,7 +347,6 @@
             </div>
         </section>
     </main>
-    <!--growth solutions-->
     <footer class="footer">
         <div class="container wrapp-foot">
             <div class="wrapper-footer-logo">
@@ -405,60 +404,67 @@
             </div>
         </div>
     </footer>
-    <div class="modal-container">
-        <div class="modal-window-open">
-            <button class="mod-window-close" type="button">
-                <svg class="icon-sbscrb" width="8" height="8">
+    <div class="modal">
+        <div class="modal-list">
+            <button class="mod-window" type="button">
+                <svg class="icon-close-w" width="8" height="8">
                     <use href="./images/icons.svg#icon-close-black"></use>
                 </svg>
             </button>
             <p class="leav-your-contacts">Leave your contacts and we will call you back</p>
-
             <form class="modal-form">
-                <div class="wrapper-form">
-                    <label>
-                        Name
-                        <input class="modal-input" type="text" name="username" required>
-                    </label>
-                    <svg class="icon-sbscrb" width="18" height="18">
-                        <use href="./images/icons.svg#icon-person-black"></use>
-                    </svg>
-                </div>
-                <div>
+                <div class="user-info-li">
+                    <label for="user-name" class="modal-lable">Name</label>
+                    <div class="user-info-note">
+                        <input type="text" name="user-name" class="modal-input" />
+                        <svg class="icon-user-info" width="18" height="18">
+                            <use href="./images/icons.svg#icon-person-black"></use>
+                        </svg>
 
-                    <label>
-                        Phone
-                        <input type="tel" name="contact_tel" required>
-                    </label>
-                    <svg class="icon-sbscrb" width="18" height="24">
-                        <use href="./images/icons.svg#icon-phone-black"></use>
-                    </svg>
+                    </div>
                 </div>
-                <div>
-                    <label>
-                        Email
-                        <input type="email" name="email">
-                    </label>
-                    <svg class="icon-sbscrb" width="18" height="24">
-                        <use href="./images/icons.svg#icon-email-black"></use>
-                    </svg>
+                <div class="user-info-li">
+                    <label for="uset-phone" class="modal-lable">Phone</label>
+                    <div class="user-info-note">
+                        <input type="text" name="user-phone" class="modal-input" />
+                        <svg class="icon-user-info" width="18" height="24">
+                            <use href="./images/icons.svg#icon-phone-black"></use>
+                        </svg>
+
+                    </div>
                 </div>
-                <div>
-                    <label>
-                        Comment
-                        <input type="email" name="email">
-                        <span>
-                            <svg class="icon-sbscrb" width="16" height="16">
+                <div class="user-info-li">
+                    <label for="user-email" class="modal-lable">Email</label>
+                    <div class="user-info-note">
+                        <input type="text" name="user-email" class="modal-input" />
+                        <svg class="icon-user-info" width="18" height="24">
+                            <use href="./images/icons.svg#icon-email-black"></use>
+                        </svg>
+
+                    </div>
+                </div>
+                <div class="user-coment-window">
+                    <label for="user-coment" class="modal-lable">Coment</label>
+
+                    <textarea class="window-textarea" name="user-coment" id="user-coment" cols="30" rows="10"
+                        placeholder="Tixt input"></textarea>
+                </div>
+                <div class="wrapp-window-checkbox">
+                    <input type="checkbox" class="mod-window-checkbox visually-hidden" name="user-coment"
+                        value="true" />
+                    <label class="lable-list" for="user-note">
+                        <span class="span-coment">
+                            <svg class="icon-checkbox" width="10" height="8">
                                 <use href="./images/icons.svg#icon-checkbox"></use>
                             </svg>
                         </span>I accept the terms and conditions of the
-                        <a class="checkbox-privacy" href="">Privacy Policy</a>
+                        <a class="checkbox-privacy" href=""> Privacy Policy</a>
                     </label>
                 </div>
-                <button class="" type="submit">Send</button>
-
-            </form>
         </div>
+        <button type="submit" class="mod-window-send">Send</button>
+        </form>
+    </div>
     </div>
 </body>
 
