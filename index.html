@@ -414,9 +414,9 @@
             <p class="leav-your-contacts">Leave your contacts and we will call you back</p>
             <form class="modal-form">
                 <div class="user-info-li">
-                    <label for="user-name" class="modal-lable">Name</label>
+                    <label for="user-name" class="info-abov-client">Name</label>
                     <div class="user-info-note">
-                        <input type="text" name="user-name" class="modal-input" />
+                        <input type="text" name="user-name" class="modal-input" id="user-name">
                         <svg class="icon-user-info" width="18" height="18">
                             <use href="./images/icons.svg#icon-person-black"></use>
                         </svg>
@@ -424,9 +424,9 @@
                     </div>
                 </div>
                 <div class="user-info-li">
-                    <label for="uset-phone" class="modal-lable">Phone</label>
+                    <label class="info-abov-client" for="user-name">Phone</label>
                     <div class="user-info-note">
-                        <input type="text" name="user-phone" class="modal-input" />
+                        <input class="modal-input" type="text" name="user-phone" id="user-phone">
                         <svg class="icon-user-info" width="18" height="24">
                             <use href="./images/icons.svg#icon-phone-black"></use>
                         </svg>
@@ -434,9 +434,9 @@
                     </div>
                 </div>
                 <div class="user-info-li">
-                    <label for="user-email" class="modal-lable">Email</label>
+                    <label for="user-name" class="info-abov-client">Email</label>
                     <div class="user-info-note">
-                        <input type="text" name="user-email" class="modal-input" />
+                        <input type="text" name="user-email" class="modal-input" id="user-email">
                         <svg class="icon-user-info" width="18" height="24">
                             <use href="./images/icons.svg#icon-email-black"></use>
                         </svg>
@@ -444,16 +444,15 @@
                     </div>
                 </div>
                 <div class="user-coment-window">
-                    <label for="user-coment" class="modal-lable">Coment</label>
-
-                    <textarea class="window-textarea" name="user-coment" id="user-coment" cols="30" rows="10"
-                        placeholder="Tixt input"></textarea>
+                    <label for="user-comment" class="info-abov-client">Comment</label>
+                    <textarea class="window-textarea" name="user-comment" id="user-comment" cols="30" rows="10"
+                        placeholder="Text input"></textarea>
                 </div>
                 <div class="wrapp-window-checkbox">
-                    <input type="checkbox" class="mod-window-checkbox visually-hidden" name="user-coment"
-                        value="true" />
-                    <label class="lable-list" for="user-note">
-                        <span class="span-coment">
+                    <input type="checkbox" class="mod-window-checkbox visually-hidden" name="user-privacy" value="true"
+                        id="user-privacy">
+                    <label class="user-comment-list" for="user-privacy">
+                        <span class="span-comment">
                             <svg class="icon-checkbox" width="10" height="8">
                                 <use href="./images/icons.svg#icon-checkbox"></use>
                             </svg>
@@ -461,10 +460,10 @@
                         <a class="checkbox-privacy" href=""> Privacy Policy</a>
                     </label>
                 </div>
+
+                <button type="submit" class="mod-window-send">Send</button>
+            </form>
         </div>
-        <button type="submit" class="mod-window-send">Send</button>
-        </form>
-    </div>
     </div>
 </body>
 
